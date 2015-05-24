@@ -1,6 +1,6 @@
-language: objective-c
+language: ruby
 before_install:
     - brew update
     - brew unlink xctool
     - brew install xctool
-script: xctool -scheme CarControl build test
+script: xctool -scheme CarControl -sdk iphonesimulator build test
