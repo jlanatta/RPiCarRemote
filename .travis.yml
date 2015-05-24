@@ -1,4 +1,5 @@
 language: objective-c
-xcode_project: CarControl.xcodeproj # path to your xcodeproj folder
-xcode_scheme: CarControl
-xcode_sdk: iphonesimulator
+#xcode_project: CarControl.xcodeproj # path to your xcodeproj folder
+#xcode_scheme: CarControl
+#xcode_sdk: iphonesimulator
+script: xctool -scheme CarControl -sdk iphonesimulator build test
