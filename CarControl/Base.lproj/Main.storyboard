@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itZ-hO-Ykb" userLabel="Left Slider" customClass="Slider" customModule="CarControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybN-Ve-e7d" userLabel="Right Slider" customClass="Slider" customModule="CarControl" customModuleProvider="target">
+                                <rect key="frame" x="400" y="0.0" width="200" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ybN-Ve-e7d" firstAttribute="bottom" secondItem="itZ-hO-Ykb" secondAttribute="bottom" id="MSC-0F-Le0"/>
+                            <constraint firstAttribute="trailing" secondItem="ybN-Ve-e7d" secondAttribute="trailing" id="MkW-X3-Bq4"/>
+                            <constraint firstItem="ybN-Ve-e7d" firstAttribute="top" secondItem="itZ-hO-Ykb" secondAttribute="top" id="RRa-Ya-cZM"/>
+                            <constraint firstItem="itZ-hO-Ykb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZcM-eB-Pro"/>
+                            <constraint firstItem="ybN-Ve-e7d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="evZ-kx-mUu"/>
+                            <constraint firstItem="itZ-hO-Ykb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="mVv-1D-Ngx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="itZ-hO-Ykb" secondAttribute="bottom" id="qIz-xX-Uc2"/>
+                            <constraint firstItem="itZ-hO-Ykb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="yjf-gC-DOI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
