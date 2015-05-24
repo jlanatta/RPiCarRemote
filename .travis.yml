@@ -3,4 +3,4 @@ before_install:
     - brew update
     - brew unlink xctool
     - brew install xctool
-script: xctool -workspace CarControl.xcworkspace -scheme CarControl test
+script: xctool -scheme CarControl build test
