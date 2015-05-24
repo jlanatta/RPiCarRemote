@@ -3,4 +3,5 @@ language: objective-c
 #xcode_scheme: CarControl
 #xcode_sdk: iphonesimulator
 #script: xctool -scheme CarControl -sdk iphonesimulator build test
-script: xcodebuild test -project CarControl.xcodeproj -scheme CarControl -sdk iphonesimulator
+#script: xcodebuild test -project CarControl.xcodeproj -scheme CarControl -sdk iphonesimulator
+script: xcodebuild -list
