@@ -16,6 +16,12 @@
 		3B0210FA1B113128005D2534 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210F91B113128005D2534 /* Slider.swift */; };
 		3B0210FE1B1133F5005D2534 /* SliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210FD1B1133F5005D2534 /* SliderTests.swift */; };
 		3B0210FF1B113551005D2534 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210F91B113128005D2534 /* Slider.swift */; };
+		3B5172AA1B128AFC00985006 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172A91B128AFC00985006 /* CarController.swift */; };
+		3B5172AC1B128B4B00985006 /* CarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172AB1B128B4B00985006 /* CarControllerTests.swift */; };
+		3B5172AD1B128B6700985006 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172A91B128AFC00985006 /* CarController.swift */; };
+		3B5172AF1B128C3D00985006 /* CarConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172AE1B128C3D00985006 /* CarConnector.swift */; };
+		3B5172B01B128C4300985006 /* CarConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172AE1B128C3D00985006 /* CarConnector.swift */; };
+		3B5172B21B128DB900985006 /* DummyCarConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172B11B128DB900985006 /* DummyCarConnector.swift */; };
 		3B983F181B113FE600A558FC /* UIColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B983F171B113FE600A558FC /* UIColorApp.swift */; };
 		3BD274671B1202ED00B9FD64 /* UIColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B983F171B113FE600A558FC /* UIColorApp.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +49,10 @@
 		3B0210EF1B11308A005D2534 /* CarControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlTests.swift; sourceTree = "<group>"; };
 		3B0210F91B113128005D2534 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		3B0210FD1B1133F5005D2534 /* SliderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTests.swift; sourceTree = "<group>"; };
+		3B5172A91B128AFC00985006 /* CarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
+		3B5172AB1B128B4B00985006 /* CarControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarControllerTests.swift; sourceTree = "<group>"; };
+		3B5172AE1B128C3D00985006 /* CarConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarConnector.swift; sourceTree = "<group>"; };
+		3B5172B11B128DB900985006 /* DummyCarConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyCarConnector.swift; sourceTree = "<group>"; };
 		3B983F171B113FE600A558FC /* UIColorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +97,8 @@
 			children = (
 				3B0210D91B113089005D2534 /* AppDelegate.swift */,
 				3B0210DB1B113089005D2534 /* ViewController.swift */,
+				3B5172A91B128AFC00985006 /* CarController.swift */,
+				3B5172AE1B128C3D00985006 /* CarConnector.swift */,
 				3B264D031B1245FA00CBE5E5 /* Views */,
 				3B264D021B1245EE00CBE5E5 /* Extensions */,
 				3B0210E21B113089005D2534 /* LaunchScreen.xib */,
@@ -110,6 +122,8 @@
 			children = (
 				3B0210EF1B11308A005D2534 /* CarControlTests.swift */,
 				3B0210FD1B1133F5005D2534 /* SliderTests.swift */,
+				3B5172AB1B128B4B00985006 /* CarControllerTests.swift */,
+				3B5172B11B128DB900985006 /* DummyCarConnector.swift */,
 				3B0210ED1B11308A005D2534 /* Supporting Files */,
 			);
 			path = CarControlTests;
@@ -240,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0210DC1B113089005D2534 /* ViewController.swift in Sources */,
+				3B5172AA1B128AFC00985006 /* CarController.swift in Sources */,
+				3B5172AF1B128C3D00985006 /* CarConnector.swift in Sources */,
 				3B983F181B113FE600A558FC /* UIColorApp.swift in Sources */,
 				3B0210FA1B113128005D2534 /* Slider.swift in Sources */,
 				3B0210DA1B113089005D2534 /* AppDelegate.swift in Sources */,
@@ -250,10 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5172B01B128C4300985006 /* CarConnector.swift in Sources */,
 				3B0210FE1B1133F5005D2534 /* SliderTests.swift in Sources */,
 				3BD274671B1202ED00B9FD64 /* UIColorApp.swift in Sources */,
 				3B0210FF1B113551005D2534 /* Slider.swift in Sources */,
 				3B0210F01B11308A005D2534 /* CarControlTests.swift in Sources */,
+				3B5172AD1B128B6700985006 /* CarController.swift in Sources */,
+				3B5172AC1B128B4B00985006 /* CarControllerTests.swift in Sources */,
+				3B5172B21B128DB900985006 /* DummyCarConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
