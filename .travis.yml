@@ -1,4 +1,0 @@
-language: objective-c
-xcode_project: CarControl.xcodeproj
-xcode_scheme: CarControl
-xcode_sdk: iphonesimulator
