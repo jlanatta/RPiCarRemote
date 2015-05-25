@@ -9,21 +9,21 @@
 import UIKit
 
 @IBDesignable
-class Slider: UIView {
+public class Slider: UIView {
     @IBInspectable var margin:CGFloat = 25
     @IBInspectable var sliderHeight:CGFloat = 25
     var value:CGFloat = 0
     
 //MARK: - Touch -
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.updateSliderFor(event: event);
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.updateSliderFor(event: nil);
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.updateSliderFor(event: event);
     }
     
@@ -73,12 +73,12 @@ class Slider: UIView {
     }
     
 //MARK: - Drawing -
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         self.setNeedsDisplay()
     }
 
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         super.drawRect(rect)
         if (self.value < 0) {
             UIColor.appRedColor().setStroke()

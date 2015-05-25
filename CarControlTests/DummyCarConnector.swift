@@ -20,13 +20,6 @@ class DummyCarConnector: CarConnector {
         return self.data != nil
     }
     
-    func send(#data: NSData) {
-        if (self.isConnected()) {
-            if let myData = self.data {
-                myData.appendData(data)
-            }
-        }
-    }
     
     func disconnect() {
         self.data = nil

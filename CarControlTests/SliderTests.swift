@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import CarControl
 
 class SliderTests: XCTestCase {
     var slider1:Slider!

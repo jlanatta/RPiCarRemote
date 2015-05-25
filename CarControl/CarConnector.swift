@@ -11,7 +11,6 @@ import Foundation
 protocol CarConnector {
     func connect() -> Bool
     func isConnected() -> Bool
-    func send(#data:NSData)
     func disconnect()
     func write(#value:UInt8)
 }

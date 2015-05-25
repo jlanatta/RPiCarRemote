@@ -16,6 +16,10 @@
 		3B0210FA1B113128005D2534 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210F91B113128005D2534 /* Slider.swift */; };
 		3B0210FE1B1133F5005D2534 /* SliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210FD1B1133F5005D2534 /* SliderTests.swift */; };
 		3B0210FF1B113551005D2534 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0210F91B113128005D2534 /* Slider.swift */; };
+		3B1E87221B12AD450045788B /* SocketCarConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E87211B12AD450045788B /* SocketCarConnector.swift */; };
+		3B1E87261B12B7410045788B /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E87241B12B7410045788B /* ysocket.swift */; };
+		3B1E87271B12B7410045788B /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E87251B12B7410045788B /* ytcpsocket.swift */; };
+		3B1E87291B12B7930045788B /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E87281B12B7930045788B /* ytcpsocket.c */; };
 		3B5172AA1B128AFC00985006 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172A91B128AFC00985006 /* CarController.swift */; };
 		3B5172AC1B128B4B00985006 /* CarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172AB1B128B4B00985006 /* CarControllerTests.swift */; };
 		3B5172AD1B128B6700985006 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5172A91B128AFC00985006 /* CarController.swift */; };
@@ -49,6 +53,10 @@
 		3B0210EF1B11308A005D2534 /* CarControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarControlTests.swift; sourceTree = "<group>"; };
 		3B0210F91B113128005D2534 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		3B0210FD1B1133F5005D2534 /* SliderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTests.swift; sourceTree = "<group>"; };
+		3B1E87211B12AD450045788B /* SocketCarConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketCarConnector.swift; sourceTree = "<group>"; };
+		3B1E87241B12B7410045788B /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		3B1E87251B12B7410045788B /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		3B1E87281B12B7930045788B /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
 		3B5172A91B128AFC00985006 /* CarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
 		3B5172AB1B128B4B00985006 /* CarControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarControllerTests.swift; sourceTree = "<group>"; };
 		3B5172AE1B128C3D00985006 /* CarConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarConnector.swift; sourceTree = "<group>"; };
@@ -95,10 +103,12 @@
 		3B0210D61B113089005D2534 /* CarControl */ = {
 			isa = PBXGroup;
 			children = (
+				3B1E87231B12B6CC0045788B /* External */,
 				3B0210D91B113089005D2534 /* AppDelegate.swift */,
 				3B0210DB1B113089005D2534 /* ViewController.swift */,
 				3B5172A91B128AFC00985006 /* CarController.swift */,
 				3B5172AE1B128C3D00985006 /* CarConnector.swift */,
+				3B1E87211B12AD450045788B /* SocketCarConnector.swift */,
 				3B264D031B1245FA00CBE5E5 /* Views */,
 				3B264D021B1245EE00CBE5E5 /* Extensions */,
 				3B0210E21B113089005D2534 /* LaunchScreen.xib */,
@@ -135,6 +145,17 @@
 				3B0210EE1B11308A005D2534 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B1E87231B12B6CC0045788B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E87241B12B7410045788B /* ysocket.swift */,
+				3B1E87251B12B7410045788B /* ytcpsocket.swift */,
+				3B1E87281B12B7930045788B /* ytcpsocket.c */,
+			);
+			name = External;
+			path = Classes/External;
 			sourceTree = "<group>";
 		};
 		3B264D021B1245EE00CBE5E5 /* Extensions */ = {
@@ -255,8 +276,12 @@
 			files = (
 				3B0210DC1B113089005D2534 /* ViewController.swift in Sources */,
 				3B5172AA1B128AFC00985006 /* CarController.swift in Sources */,
+				3B1E87261B12B7410045788B /* ysocket.swift in Sources */,
+				3B1E87271B12B7410045788B /* ytcpsocket.swift in Sources */,
+				3B1E87291B12B7930045788B /* ytcpsocket.c in Sources */,
 				3B5172AF1B128C3D00985006 /* CarConnector.swift in Sources */,
 				3B983F181B113FE600A558FC /* UIColorApp.swift in Sources */,
+				3B1E87221B12AD450045788B /* SocketCarConnector.swift in Sources */,
 				3B0210FA1B113128005D2534 /* Slider.swift in Sources */,
 				3B0210DA1B113089005D2534 /* AppDelegate.swift in Sources */,
 			);
@@ -394,9 +419,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CarControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -404,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CarControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

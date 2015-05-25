@@ -28,7 +28,7 @@ class CarController: NSObject {
         
         return self.connector.isConnected()
     }
-    
+
     func updateLeftWheel(#directionForward:Bool, speed: UInt8) {
         let newByte = self.byteFor(directionForward: directionForward, speed: speed)
         if newByte != self.leftByte {
@@ -46,7 +46,9 @@ class CarController: NSObject {
     }
     
     func stop() {
-        
+        self.leftByte = 100
+        self.rightByte = 100
+        self.writeData()
     }
     
     func byteFor(#directionForward:Bool, speed: UInt8) -> UInt8 {
